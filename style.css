@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,600&display=swap');
+
+/* resets */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --h1-color:#000;
+    --background-image:linear-gradient( white, #419EBA);
+    --button-background:#000;
+    --navBar-background:#fff;
+    --icon-background:#fff;
+    --text-color:#fff;
+    --padding-inline-block:20px;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+h1{
+    letter-spacing: 2px;
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+
+h2{
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+p{
+    letter-spacing: 1.1px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--h1-color);
+    /* transform: 0.2s ease-in-out; */
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+a:hover{
+    color: blue;
+    /* background-color: var(--button-background); */
+    /* border-radius: 8px; */
+    /* padding: 10px; */
+    /* text-decoration: underline; */
+    font-weight:bolder;
+
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-block);
+    margin-top: 5px;
+}
+
+
+ul{
+    list-style: none;
+    color: var(--h1-color);
+    justify-content: end;
+
+}
+
+li{
+    margin-inline: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+
+
+
+/* utility */
+
+.primary-button{
+    border-color: var(--button-background);
+    color: var(--h1-color);
+    background: transparent;
+    padding:10px 25px 10px 25px;
+    margin: 30px;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    color: var(--h1-color);
+    align-items: center;
+    /* text-transform: capitalize; */
+}
+.primary-button:hover{
+    background-color: var(--button-background);
+    border-color: transparent;
+    padding:10px 25px 10px 25px;
+    margin: 30px;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    color: var(--text-color);
+    /* text-transform: capitalize; */
+    align-items: center;
+    border-radius: 0px;
+    /* transform: 0.4s ease-in-out; */
+}
+
+.service-button{
+    border-color: var(--button-background);
+    color: var(--h1-color);
+    background: transparent;
+    /* padding:10px 25px 10px 25px; */
+    /* margin: 30px; */
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    color: var(--h1-color);
+    align-items: center;
+    text-decoration: none;
+    align-self: center;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+    /* text-transform: capitalize; */
+}
+.service-button:hover{
+    /* background-color: var(--button-background); */
+    /* border-color: transparent; */
+    /* padding:10px 25px 10px 25px; */
+    /* margin: 30px; */
+    display: inline-block;
+    /* width: 120px; */
+    /* height: 40px; */
+    color: var(--text-color);
+    /* text-transform: capitalize; */
+    align-items: center;
+    align-self: center;
+    border-radius: 0px;
+    text-decoration: none;
+    /* transform: scaleY(3) ; */
+    letter-spacing: 2px;
+    /* border-radius: 10px; */
+    background: black;
+
+    /* transform: 0.4s ease-in-out; */
+}
+
+
+/* navbar */
+
+.nav section{
+    justify-content: space-evenly;
+}
+
+nav section img{
+    width: 35%;
+}
+.leftnav{
+    margin-top: 10px;
+    justify-content: space-evenly;
+    float: inline-start;
+}
+
+.rightnav{
+    margin-top: 15px;
+    justify-content: space-evenly;
+    float: inline-end;
+}
+
+
+/* main */
+
+.mains{
+    background-image: var(--background-image);
+}
+
+.mainright img{
+    height: 100vh;
+    align-content: end;
+}
+
+.mainleft{
+    margin-left: 60px;
+}
+
+/* about */
+
+.aboutsection{
+    background-color: white;
+}
+
+.about{
+    margin-top: 120px ;
+    text-align: center;
+}
+
+.abouttext p{
+    /* margin-block: 50px; */
+    margin-bottom: 100px;
+}
+
+/* services */
+.services{
+    background-image: var(--background-image);
+    padding-block: 50px;
+
+}
+
+.servicestext{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.doctor{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctor a{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.doctor img{
+    margin: 30px;
+}
+
+.patient{
+    flex-direction: column;
+}
+
+.patient a{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.patient img{
+    margin: 30px;
+}
+
+
+/* footer */
+
+footer{
+    background-color: var(--button-background);
+    color:var(--text-color);
+    padding-block: 20px;
+}
